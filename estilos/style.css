@@ -13,7 +13,8 @@ Lilas: #5f2c82
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     background-color: #5f2c82;
     height: 100vh;
     width: 100vh;
@@ -42,7 +43,7 @@ section#login {
     transition-timing-function: ease;
 }
 
-section#login > div#imagem {
+section#login>div#imagem {
     display: block;
     background: #5f2c82 url(../imagens/pexels-markusspiske-2004161.jpg) no-repeat;
     height: 200px;
@@ -50,29 +51,62 @@ section#login > div#imagem {
 
 }
 
-section#login > div#formulatorio {
+section#login>div#formulatorio {
     display: block;
     padding: 10px;
 }
 
-div#formulario > h1 {
+div#formulario>h1 {
     text-align: center;
     margin-bottom: 10px;
 }
-div#formulario > p {
+
+div#formulario>p {
     font-size: 0.8em;
 }
 
-form > div.campo {
-    display: block;
+form>div.campo {
+    display: flex;
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     width: 97%;
     height: 40px;
     border-radius: 5px;
-    margin: 5px ;
+    margin: 5px;
+
 }
-div.campo > label {
+
+div.campo>label {
     display: none;
+}
+
+div>span {
+    color: white;
+
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo>input {
+    background-color: #94cfcd;
+    font-size: 1em;
+    width: calc(100%-44px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    width: 90%;
+    
+    @media screen and (max-width: 880px) {
+        width: 100%;
+
+    }
+
+}
+
+div.campo>input:focus-within {
+    background-color: white;
+    
 }
 
 input[type=submit] {
@@ -85,10 +119,11 @@ input[type=submit] {
     border-radius: 5px;
     background-color: rgb(70, 175, 140);
     margin: 5px;
-    cursor: pointer; /* colocar a mao*/
+    cursor: pointer;
+    /* colocar a mao*/
 }
 
-input[type=submit]:hover{
+input[type=submit]:hover {
     background-color: rgb(56, 155, 115);
 }
 
@@ -100,11 +135,11 @@ a.botao {
     height: 40px;
     background-color: rgb(249, 255, 253);
     border: 1px solid rgb(86, 138, 120);
-    margin-top: 0px;    
-    margin: 5px;
+    margin-top: 0px;
+    margin: 2px;
     text-decoration: none;
 }
 
-a.botao:hover{
-    background-color:rgb(56, 155, 115) ;
+a.botao:hover {
+    background-color: rgb(56, 155, 115);
 }
