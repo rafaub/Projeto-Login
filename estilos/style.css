@@ -59,11 +59,52 @@ div#formulario > h1 {
     text-align: center;
     margin-bottom: 10px;
 }
-
-div#formulario > h1 {
-font-size: 2.0em;
+div#formulario > p {
+    font-size: 0.8em;
 }
 
-div#formulario > p {
-    font-size: 1.2em;
+form > div.campo {
+    display: block;
+    background-color: #5f2c82;
+    width: 97%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px ;
+}
+div.campo > label {
+    display: none;
+}
+
+input[type=submit] {
+    display: block;
+    width: 97%;
+    height: 32px;
+    font-size: 1em;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(70, 175, 140);
+    margin: 5px;
+    cursor: pointer; /* colocar a mao*/
+}
+
+input[type=submit]:hover{
+    background-color: rgb(56, 155, 115);
+}
+
+a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 97%;
+    height: 40px;
+    background-color: rgb(249, 255, 253);
+    border: 1px solid rgb(86, 138, 120);
+    margin-top: 0px;    
+    margin: 5px;
+    text-decoration: none;
+}
+
+a.botao:hover{
+    background-color:rgb(56, 155, 115) ;
 }
